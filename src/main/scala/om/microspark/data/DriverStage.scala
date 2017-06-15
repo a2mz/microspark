@@ -1,4 +1,4 @@
-package om.mrs.data
+package om.microspark.data
 
 /**
   * Created by Morozov Oleksandr on 6/14/17.

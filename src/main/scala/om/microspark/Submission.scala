@@ -8,7 +8,7 @@ import akka.http.scaladsl.model.headers.RawHeader
 import akka.http.scaladsl.unmarshalling.Unmarshal
 import akka.stream.Materializer
 import de.heikoseeberger.akkahttpplayjson.PlayJsonSupport
-import om.mrs.data._
+import om.microspark.data._
 import play.api.libs.json.Json
 import scala.concurrent.{ExecutionContextExecutor, Future}
 

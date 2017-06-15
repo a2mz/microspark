@@ -1,4 +1,4 @@
-package om.mrs.data
+package om.microspark.data
 
 import play.api.libs.json._
 

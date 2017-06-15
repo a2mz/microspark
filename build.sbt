@@ -17,8 +17,39 @@ val buildSettings = Defaults.coreDefaultSettings ++ Seq(
    scalacOptions ++= Seq("-Xfatal-warnings","-feature","-language:higherKinds", "-language:implicitConversions" , "-language:postfixOps", "-deprecation")
 )
 
+lazy val publishSettings = Seq(
+  pomExtra := (
+    <url>https://github.com/a2mz/microspark</url>
+      <licenses>
+        <license>
+          <name>Apache 2.0</name>
+          <url>http://www.apache.org/licenses/</url>
+          <distribution>repo</distribution>
+        </license>
+      </licenses>
+      <scm>
+        <url>git@github.com:a2mz/microspark.git</url>
+        <connection>scm:git@ithub.com:a2mz/microspark.git</connection>
+      </scm>
+      <developers>
+
+        <developer>
+          <id>om</id>
+          <name>Morozov Oleksandr</name>
+          <url>https://www.linkedin.com/in/oleksandr-morozov-77281711/</url>
+        </developer>
+      </developers>
+    ),
+  publishTo := {
+    val nexus = "https://oss.sonatype.org/"
+    if (version.value.toLowerCase.endsWith("snapshot"))
+      Some("snapshots" at nexus + "content/repositories/snapshots")
+    else
+      Some("staging" at nexus + "service/local/staging/deploy/maven2")
+  }
+)
 
 
 lazy val root = project
   .in(file("."))
-  .settings(buildSettings)
+  .settings(buildSettings ++ publishSettings)
