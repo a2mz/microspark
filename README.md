@@ -1,4 +1,4 @@
-# microspark
+#  microspark
 Micro Spark Rest API
 [![](https://jitpack.io/v/a2mz/microspark.svg)](https://jitpack.io/#a2mz/microspark)
 
@@ -7,7 +7,7 @@ Micro Spark Rest API
 # Functionality
 - Submit spark jobs
 - View status submitted job
-- Kill a job
+- Kill a job (in progress)
 
 ## SBT ##
  ```
