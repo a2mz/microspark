@@ -8,3 +8,13 @@ Micro Spark Rest API
 - Submit spark jobs
 - View status submitted job
 - Kill a job
+
+## SBT ##
+ ```
+    resolvers += "jitpack" at "https://jitpack.io"
+ ```
+ 
+ ```
+ 		libraryDependencies += "com.github.a2mz" % "microspark" % "1.0"	
+```
+    
