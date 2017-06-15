@@ -2,7 +2,7 @@ import sbt.Keys.{scalacOptions, _}
 
 val buildSettings = Defaults.coreDefaultSettings ++ Seq(
   name := "microspark",
-  version := "1.0-SNAPSHOT",
+  version := "1.1",
   scalacOptions ++= Seq(),
   scalaVersion := "2.12.1",
   crossScalaVersions := Seq("2.12.1","2.11.10"),
