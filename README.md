@@ -11,10 +11,10 @@ Micro Spark Rest API
 
 ## SBT ##
  ```
-    resolvers += "jitpack" at "https://jitpack.io"
+     resolvers += "jitpack" at "https://jitpack.io"
  ```
  
  ```
- 		libraryDependencies += "com.github.a2mz" % "microspark" % "1.0"	
-```
+     libraryDependencies += "com.github.a2mz" % "microspark" % "1.0"	
+ ```
     
