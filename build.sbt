@@ -27,10 +27,7 @@ lazy val publishSettings = Seq(
           <distribution>repo</distribution>
         </license>
       </licenses>
-      <scm>
-        <url>git@github.com:a2mz/microspark.git</url>
-        <connection>scm:git@github.com:a2mz/microspark.git</connection>
-      </scm>
+
       <developers>
         <developer>
           <id>a2mz</id>
@@ -38,14 +35,7 @@ lazy val publishSettings = Seq(
           <url>github.com/a2mz</url>
         </developer>
       </developers>
-  ),
-  publishTo := {
-    val nexus = "https://oss.sonatype.org/"
-    if (version.value.toLowerCase.endsWith("snapshot"))
-      Some("snapshots" at nexus + "content/repositories/snapshots")
-    else
-      Some("staging" at nexus + "service/local/staging/deploy/maven2")
-  }
+  )
 )
 scalaVersion in ThisBuild := "2.12.1"
 
