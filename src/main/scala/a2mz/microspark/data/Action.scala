@@ -1,4 +1,4 @@
-package om.microspark.data
+package a2mz.microspark.data
 
 import play.api.libs.json._
 

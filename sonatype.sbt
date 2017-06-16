@@ -26,7 +26,8 @@ publishTo := Some(
 //addSbtPlugin("com.github.gseitz" % "sbt-release" % "1.0.5")
 import ReleaseTransformations._
 
-releaseCrossBuild:=true
+//releaseCrossBuild:=true
+
 releaseUseGlobalVersion:=false
 releaseProcess := Seq[ReleaseStep](
   checkSnapshotDependencies,
@@ -36,9 +37,9 @@ releaseProcess := Seq[ReleaseStep](
   setReleaseVersion,
   commitReleaseVersion,
   tagRelease,
-  ReleaseStep(action = Command.process("publish-signed", _), enableCrossBuild = true),
-  setNextVersion,
-  commitNextVersion,
-  ReleaseStep(action = Command.process("sonatypeReleaseAll", _), enableCrossBuild = true),
-  pushChanges
+  ReleaseStep(action = Command.process("publish-signed", _), enableCrossBuild = true)
+//  setNextVersion,
+//  commitNextVersion,
+//  ReleaseStep(action = Command.process("sonatypeReleaseAll", _), enableCrossBuild = true),
+//  pushChanges
 )

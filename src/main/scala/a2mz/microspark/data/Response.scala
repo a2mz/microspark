@@ -1,4 +1,4 @@
-package om.microspark.data
+package a2mz.microspark.data
 
 /**
   * Created by Morozov Oleksandr on 6/14/17.
