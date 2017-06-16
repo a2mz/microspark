@@ -1,6 +1,6 @@
 package a2mz.microspark
 
-import a2mz.microspark.data.{CreateSubmissionsError, HttpRequestError, StatusSubmissionsError}
+import a2mz.microspark.data._
 import akka.actor.ActorSystem
 import akka.http.scaladsl.Http
 import akka.http.scaladsl.model.StatusCodes._
@@ -9,7 +9,6 @@ import akka.http.scaladsl.model.headers.RawHeader
 import akka.http.scaladsl.unmarshalling.Unmarshal
 import akka.stream.Materializer
 import de.heikoseeberger.akkahttpplayjson.PlayJsonSupport
-import om.microspark.data._
 import play.api.libs.json.Json
 
 import scala.concurrent.{ExecutionContextExecutor, Future}
