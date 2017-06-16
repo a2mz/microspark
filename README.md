@@ -10,11 +10,10 @@ Micro Spark Rest API
 - Kill a job (in progress)
 
 ## SBT ##
- ```
-     resolvers += "jitpack" at "https://jitpack.io"
- ```
- 
- ```
-     libraryDependencies += "com.github.a2mz" % "microspark" % "1.0"	
- ```
-    
+```
+
+resolvers += Resolver.sonatypeRepo("public")
+
+"com.github.a2mz" %% "microspark" % "2.0"
+
+```
