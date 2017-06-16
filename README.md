@@ -12,7 +12,10 @@ Micro Spark Rest API
 ```
 
 resolvers += Resolver.sonatypeRepo("public")
-qwwww
+
+```
+
+```
 
 "com.github.a2mz" %% "microspark" % "2.0"
 
