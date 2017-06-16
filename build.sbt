@@ -25,8 +25,6 @@ val buildSettings = Defaults.coreDefaultSettings ++ Seq(
 )
 
 
-
-
 lazy val root = project
   .in(file("."))
   .settings(buildSettings)
